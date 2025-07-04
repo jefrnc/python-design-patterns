@@ -1,0 +1,1 @@
+"""Tools package for Python Design Patterns repository."""

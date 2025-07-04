@@ -1,11 +1,11 @@
-# Builder Pattern
+# Proxy Pattern
 
 ## Overview
-The Builder pattern is a creational design pattern that...
+The Proxy pattern is a structural design pattern that...
 
 ## Implementation Tiers
 
-This directory contains three implementations of the Builder pattern:
+This directory contains three implementations of the Proxy pattern:
 
 ### 1. 📚 Basic Implementation (`basic.py`)
 - Academic/textbook implementation
@@ -29,18 +29,18 @@ This directory contains three implementations of the Builder pattern:
 
 ```python
 # Basic usage
-from creational.builder.basic import *
+from structural.proxy.basic import *
 
 # Practical usage  
-from creational.builder.practical import *
+from structural.proxy.practical import *
 
 # Advanced usage
-from creational.builder.advanced import *
+from structural.proxy.advanced import *
 ```
 
 ## When to Use
 
-The Builder pattern is useful when:
+The Proxy pattern is useful when:
 - [Use case 1]
 - [Use case 2]
 - [Use case 3]
@@ -53,4 +53,4 @@ The Builder pattern is useful when:
 ## References
 
 - [Gang of Four Design Patterns Book](https://www.goodreads.com/book/show/85009.Design_Patterns)
-- [Pattern Documentation](../../docs/patterns/creational/builder.md)
+- [Pattern Documentation](../../docs/patterns/structural/proxy.md)
