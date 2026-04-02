@@ -803,10 +803,9 @@ class IntelligentFlyweightFactory:
             except Exception as e:
                 logging.error(f"Failed to create character flyweight: {e}")
                 raise
-        
-        finally:
-            duration = (time.time() - start_time) * 1000
-            self._performance_monitor.record_operation("get_character_flyweight", duration)
+            finally:
+                duration = (time.time() - start_time) * 1000
+                self._performance_monitor.record_operation("get_character_flyweight", duration)
     
     def _on_flyweight_deleted(self, weak_ref):
         """Callback when flyweight is garbage collected."""

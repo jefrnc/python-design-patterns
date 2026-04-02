@@ -470,7 +470,7 @@ class CodeGeneratorVisitor(Visitor):
     
     def visit_if_statement(self, node: IfStatementNode) -> Any:
         condition_code = node.condition.accept(self)
-        self._emit(f"if ({condition_code}) {{")\n        
+        self._emit(f"if ({condition_code}) {{")
         self.indent_level += 1
         node.then_statement.accept(self)
         self.indent_level -= 1

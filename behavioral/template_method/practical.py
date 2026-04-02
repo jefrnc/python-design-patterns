@@ -339,7 +339,7 @@ class CSVETLPipeline(DataETLPipeline):
         self.log(f"Writing {len(self.transformed_data)} records to {filename}")
 
 
-class JSONETL Pipeline(DataETLPipeline):
+class JSONETLPipeline(DataETLPipeline):
     """
     ETL pipeline for processing JSON data.
     """
@@ -451,7 +451,7 @@ class JSONETL Pipeline(DataETLPipeline):
         self.log(f"Loading {len(self.transformed_data)} JSON records to target")
 
 
-class XMLETL Pipeline(DataETLPipeline):
+class XMLETLPipeline(DataETLPipeline):
     """
     ETL pipeline for processing XML data.
     """

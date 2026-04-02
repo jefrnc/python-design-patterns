@@ -422,7 +422,7 @@ class StrategySelector:
         # Filter strategies that can handle the context
         available_strategies = [
             s for s in strategies 
-            if s.can_handle(context) if context else True
+            if (s.can_handle(context) if context else True)
         ]
         
         if not available_strategies:

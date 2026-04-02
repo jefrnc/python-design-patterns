@@ -1003,7 +1003,7 @@ def demonstrate_factory_method_pattern():
     channels = [
         (NotificationType.EMAIL, "gmail"),
         (NotificationType.PUSH, "fcm")
-    )
+    ]
     
     multi_results = notification_service.send_multi_channel_notification(
         channels, multi_channel_recipient, alert_content, Priority.HIGH
