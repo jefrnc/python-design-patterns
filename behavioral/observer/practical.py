@@ -7,7 +7,7 @@ updates, news alerts, and trading signals from multiple sources.
 """
 
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any, Optional, Set
+from typing import Callable, List, Dict, Any, Optional, Set
 from datetime import datetime
 from enum import Enum
 import random

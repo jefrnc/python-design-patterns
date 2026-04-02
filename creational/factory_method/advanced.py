@@ -47,16 +47,16 @@ import random
 
 # Type Variables and Protocols
 T = TypeVar('T')
-H = TypeVar('H', bound='NotificationHandler')
-F = TypeVar('F', bound='NotificationFactory')
+H = TypeVar('H', bound='OptimizedNotificationHandler')
+F = TypeVar('F', bound='OptimizedNotificationFactory')
 
 
 class NotificationHandlerProtocol(Protocol[T]):
     """Protocol defining the interface for notification handlers."""
     
-    async def send_notification(self, recipient: 'Recipient', content: 'NotificationContent', 
-                              priority: 'Priority') -> 'DeliveryResult': ...
-    async def validate_recipient(self, recipient: 'Recipient') -> bool: ...
+    async def send_notification(self, recipient: 'SmartRecipient', content: 'IntelligentNotificationContent',
+                              priority: 'Priority') -> 'ComprehensiveDeliveryResult': ...
+    async def validate_recipient(self, recipient: 'SmartRecipient') -> bool: ...
     async def health_check(self) -> bool: ...
     async def get_metrics(self) -> Dict[str, Any]: ...
 

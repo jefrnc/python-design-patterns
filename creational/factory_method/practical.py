@@ -15,7 +15,7 @@ This example shows how to:
 """
 
 from abc import ABC, abstractmethod
-from typing import Dict, List, Optional, Any, Union
+from typing import Dict, List, Optional, Any, Tuple, Union
 from dataclasses import dataclass, field
 from enum import Enum
 from datetime import datetime, timedelta
@@ -501,7 +501,7 @@ class PushNotificationHandler(NotificationHandler):
                 'click_action': content.metadata.get('click_action')
             },
             'data': content.metadata,
-            'priority': priority.value
+            'priority': content.metadata.get('priority', 'normal')
         }
     
     def _send_via_fcm(self, recipient: Recipient, content: Dict[str, Any], priority: Priority) -> DeliveryResult:

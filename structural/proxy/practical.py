@@ -17,7 +17,7 @@ This example shows how to:
 """
 
 from abc import ABC, abstractmethod
-from typing import Dict, List, Optional, Any, Union, BinaryIO
+from typing import Dict, List, Optional, Any, Set, Tuple, Union, BinaryIO
 from dataclasses import dataclass, field
 from enum import Enum
 from datetime import datetime, timedelta

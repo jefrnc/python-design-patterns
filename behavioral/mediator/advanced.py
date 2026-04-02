@@ -36,7 +36,7 @@ import logging
 # Type variables
 MessageT = TypeVar('MessageT')
 ComponentT = TypeVar('ComponentT', bound='Component')
-MediatorT = TypeVar('MediatorT', bound='Mediator')
+MediatorT = TypeVar('MediatorT', bound='OptimizedMediator')
 
 
 class MessagePriority(Enum):

@@ -573,7 +573,7 @@ class FileSystemObject(ABC):
     
     def __init__(self, metadata: FileMetadata):
         self.metadata = metadata
-        self.parent: Optional['Directory'] = None
+        self.parent: Optional['OptimizedDirectory'] = None
         self._object_id = f"{id(self)}_{hash(metadata.name)}"
         self._cache = AsyncLRUCache(max_size=100, default_ttl=300)
         self._lock = asyncio.RLock()
