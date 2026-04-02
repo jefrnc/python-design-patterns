@@ -119,7 +119,7 @@ class StripeAPI:
     """
     
     def __init__(self):
-        self.api_key = "sk_test_stripe_key"
+        self.api_key = "STRIPE_API_KEY_PLACEHOLDER"
         self.transactions = {}
     
     def create_charge(self, amount_cents: int, currency: str, customer_email: str, 
