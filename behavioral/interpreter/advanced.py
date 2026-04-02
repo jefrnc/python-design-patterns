@@ -14,7 +14,7 @@ This optimized version demonstrates advanced Python features:
 
 from abc import ABC, abstractmethod
 from typing import (
-    TypeVar, Generic, Protocol, Optional, List, Dict, Any, 
+    TypeVar, Generic, Protocol, Optional, List, Dict, Any, Set,
     Callable, Union, Type, get_type_hints, runtime_checkable
 )
 from dataclasses import dataclass, field
